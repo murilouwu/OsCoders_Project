@@ -175,11 +175,17 @@ body{
         font-weight: bold;
         margin-bottom: 3vh;
     }
+        .boxText:hover{
+            width: 29vw;
+            height: 18vh;
+            cursor: pointer;
+        }
         .boxText:hover .textMost{
             display: none;
         }
         .boxText:hover .textIntern{
             display: flex;
+            width: 26vw;
         }
         .textMost{
             display: flex;

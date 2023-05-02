@@ -20,10 +20,10 @@
                         SKY DEVS
                     </div>
                     <p class="palagrafy">
-                        <b>Justificativa</b>
+                        <b>Justificativa:</b><br>
                         A "Sky Dev's" foi criada com o propósito de solucionar o problema proposto no Hackathon 2023.
                         Somos uma equipe composta por 9 membros, das turmas do 1°, 2° e 3° DES em harmonia com o 3° JODI.
-                        <b>Explicação do Nome</b>
+                        <br><b>Explicação do Nome:</b><br>
                         Escolhemos o nome "Sky Dev's" porque "Sky" faz referência ao nosso bordão: "O Céu é o limite" e "Dev's" por ser a abreviação de "developers" ("desenvolvedores" em inglês.)
                     </p>
                 </div>
@@ -84,6 +84,15 @@
         </div>
     </div>
     <label id="infoPag"> 1/3 </label>
-    <button class="bnt" onclick="frmMv(this, ['#slide1','#slide3','#slide2'], 2, 2)"> > </button>
+    <button class="bnt" id="passBtn" onclick="frmMv(this, ['#slide1','#slide3','#slide2'], 2, 2)"> > </button>
+    <script>
+        document.querySelector('body').addEventListener('keydown', (event)=>{
+            var KeyCode = event.keyCode || event.which;
+            if(KeyCode==39){
+                let btn = document.querySelector('#passBtn');
+                btn.click();
+            }
+        });
+    </script>
 </body>
 </html>

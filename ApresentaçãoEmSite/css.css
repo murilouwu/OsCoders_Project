@@ -10,7 +10,7 @@
 *{
     padding: 0;
     margin: 0;
-
+    transition: 0.1s;
 }
 .ocl{
     display: none;
@@ -216,3 +216,6 @@ body{
         margin: -71vh 0vw 0vh 75vw;
         text-align: center;
     }
+        .bnt:hover{
+            cursor: pointer;
+        }

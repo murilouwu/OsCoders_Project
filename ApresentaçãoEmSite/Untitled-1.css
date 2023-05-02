@@ -1,0 +1,15 @@
+:root{
+    --cor1: #3a3a3a;
+    --cor2: #2a4a4a;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+main{
+    background-color: #2a4a4a;
+
+
+}

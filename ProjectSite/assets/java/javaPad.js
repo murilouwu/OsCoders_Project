@@ -8,8 +8,8 @@ function PreViewImg(input, imgPreview){
     }
 }
 
-function subir(div){
-	document.querySelector(div).scrollTo(0, 0);
+function subir(){
+	window.scrollTo(0, 0);
 }
 
 function mostrar(ocu, chave){
@@ -30,3 +30,19 @@ function ocultar(obj, es){
 		div.style.display = 'none';
 	};
 };
+
+function red(page){
+	window.location = page;
+}
+
+function drop(btn, id, fun, textId, texts){
+	let es = fun==0? 1:0;
+	ocultar(id, es);
+	let div = document.querySelector(textId);
+	div.innerHTML = texts[0];
+	
+	let newTexts = [texts[1], texts[0]];
+	let fun2 = fun==0? 1:0;
+	let onclick = "drop(this, '"+id+"', "+fun2+", '"+textId+"',['"+newTexts[0]+"', '"+newTexts[1]+"'])";
+	btn.setAttribute("onclick", onclick);
+}

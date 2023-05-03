@@ -2,6 +2,7 @@
   *{
     margin: 0px;
     padding: 0px;
+    transition: 0.5s;
   }
   /*web-kit*/
     input[type=file]{

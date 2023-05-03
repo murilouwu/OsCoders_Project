@@ -1,3 +1,9 @@
 :root{
-    --Invisible: rgba(0 0 0/ 0%);
-  }
+  --branco: #f2f2f2;
+  --azul: #009393;
+  --shadow: #004444;
+  --softGreen: #009122;
+  --softBlue: #00A5CF;
+  --white: white;
+  --invisible: rgba(0 0 0 / 0%);
+}

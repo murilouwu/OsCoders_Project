@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        :root{
+            --branco: #f2f2f2;
+            --azul: #009393;
+            --shadow: #004444;
+            --softGreen: #009122;
+            --softBlue: #00A5CF;
+            --white: white;
+            --invisible: rgba(0 0 0 / 0%);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            transition: 0.1s;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(var(--shadow) 15%, transparent 16%), repeating-linear-gradient(0deg, transparent 6.5%, var(--white) 7%, var(--white) 9%, transparent 10%), linear-gradient(45deg, transparent 49%, var(--shadow) 49%, var(--shadow) 51%, transparent 50%), linear-gradient(-45deg, transparent 49%, var(--shadow) 49%, var(--shadow) 51%, transparent 51%);
+            background-size: 3em 3em;
+            height: 96vh;
+        }
+            .link{
+                width: 25vw;
+                height: 4vh;
+                border-radius: 17px;
+                color: var(--shadow);
+                background-color: var(--azul);
+                font-size: 3vh;
+                font-weight: bold;
+                margin: 2vh 0vw 0vh 0vw;
+                border: 2px solid var(--shadow);
+                text-align: center;
+                text-decoration: none;
+                padding: 1vh;
+                box-shadow: 0px 0px 0px 17px var(--branco);
+            }
+    </style>
+</head>
+<body>
+    <a href="ApresentaçãoEmSite/site.html" class="link">Apresentação</a>
+    <a href="ProjectSite/Index.php" class="link">Site</a>
+</body>
+</html>

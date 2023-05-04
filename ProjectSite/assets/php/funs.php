@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 function HeaderEcho($Title, $css, $logo){
     $res = '
         <!DOCTYPE html>

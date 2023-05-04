@@ -1,1 +1,603 @@
 @import "preset.css";
+
+body{
+    background-color: var(--branco);
+}
+    .irTop{
+        background-color: var(--invisible);
+        display: flex;
+        background-image: url('../../assets/img/Futsalball.png');
+        width: 7vw;
+        height: 11vh;
+        position: fixed;
+        margin: 74vh 0vw 0vh 85vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 100;
+        border: none;
+        animation: 1.5s nave linear infinite alternate-reverse backwards;
+    }
+        .irTop:hover{
+            cursor: pointer;
+        }
+    .cabe{
+        display: flex;
+        width: 100vw;
+        height: 8vh;
+        background-color: var(--shadow);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        border-bottom: 2px solid var(--branco);
+        z-index: 100;
+    }
+        .drop{
+            display: flex;
+            width: 17vw;
+            height: 65%;
+            flex-direction: column;
+            align-items: center;
+        }
+            .btnDrop{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 6vh;
+                width: 100%;
+            }
+                .btnDrop:hover{
+                    cursor: pointer;
+                }
+                .title:hover{
+                    cursor: pointer;
+                }
+                .logo:hover{
+                    cursor: pointer;
+                }
+                .logo{
+                    display: flex;
+                    width: 2.3vw;
+                    height: 92%;
+                    border: 2px solid var(--branco);
+                    border-radius: 10vw;
+                    background-image: url('../../assets/img/logo.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .title{
+                    color: var(--branco);
+                    font-family: monospace;
+                    font-weight: bold;
+                    font-size: 3vh;
+                    width: 13vw;
+                    text-align: center;
+                }
+            .block{
+                display: none;
+                background-color: var(--shadow);
+                width: 17vw;
+                height: auto;
+                position: absolute;
+                margin: 7vh 0vh 0vh 0vh;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 4px;
+                border: 3px solid var(--branco);
+                border-top: 0px;
+            }
+                .ul{
+                    font-size: 2vh;
+                    font-weight: bold;
+                    color: var(--branco);
+                    font-family: sans-serif;
+                    width: 100%;
+                    text-align: center;
+                    padding: 1vw;
+                }
+                    .ul:hover{
+                        cursor: pointer;
+                        box-shadow: 0px 18px 0px -15px var(--azul);
+                    }
+                    .blockExtern{
+                        display: none;
+                        background-color: var(--shadow);
+                        width: 17vw;
+                        height: auto;
+                        position: absolute;
+                        margin: 38vh 0vh 0vh 28vw;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 4px;
+                        border: 3px solid var(--branco);
+                    }
+        .TitleName{
+            display: flex;
+            width: 35vw;
+            height: 74%;
+            font-size: 3vh;
+            color: var(--branco);
+            font-family: 'FontAwesome';
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+        }
+            .name{
+                color: var(--branco);
+            }
+        .seep{
+            display: flex;
+            height: 43%;
+            width: 20vw;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'FontAwesome';
+            font-size: 2vh;
+            font-weight: bold;
+        }
+            .seep .name:hover{
+                cursor: pointer;
+            }
+    .meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+        .linha{
+            display: flex;
+            height: 76vh;
+            width: 100%;
+            background: linear-gradient(45deg , var(--shadow) 10%,transparent 11%, transparent 89% , var(--shadow) 90%),linear-gradient(135deg , var(--shadow) 10%,transparent 11%, transparent 89% , var(--shadow) 90%),radial-gradient(circle, transparent 25%, var(--azul)  26%),linear-gradient(45deg, transparent 46%, var(--shadow) 47%, var(--shadow) 52%, transparent 53%), linear-gradient(128deg, transparent 46%, var(--shadow) 47%, var(--shadow) 52%, transparent 53%);
+            background-size: 3vw 3vh;
+            background-color: var(--azul);
+        }
+            .text{
+                display: flex;
+                justify-content: center;
+                width: 60%;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                z-index: 2;
+            }
+                .text .title{
+                    font-size: 7vh;
+                    color: var(--white);
+                    margin: 18vh 0vw -11vh 42vw;
+                    width: 40vw;
+                    font-family: sans-serif;
+                    filter: drop-shadow(0px 4px 0px var(--shadow));
+                }
+                .textAdd{
+                    display: flex;
+                    width: 25vw;
+                    background-color: var(--shadow);
+                    height: 15vh;
+                    flex-direction: row;
+                    border-radius: 1vh;
+                    align-items: center;
+                    margin-left: -38vh;
+                }
+                    .textAdd .item{
+                        display: flex;
+                        height: 10vh;
+                        margin-left: -3vw;
+                        filter: drop-shadow(7px 2px 1px rgb(82 237 155 / 62%)) hue-rotate(83deg);
+                    }
+                    .bolckTextAdd{
+                        display: flex;
+                        width: 79%;
+                        margin-left: 1vw;
+                        height: 17vh;
+                        margin-top: -5vh;
+                        color: var(--branco);
+                        font-family: monospace;
+                        font-size: 2vh;
+                        font-weight: bold;
+                        border: none;
+                    }
+                        .bolckTextAdd .legenda{
+                            display: flex;
+                            font-size: 3vh;
+                        }
+                        .bolckTextAdd .palgrayAdd{
+                            display: flex;
+                            align-items: center;
+                        }
+                .addBlock2{
+                    display: flex;
+                    margin-top: 7vh;
+                    margin-left: 19vw;
+                }
+                    .addBlock2 .item{
+                        display: flex;
+                    }
+            .imageAdd{
+                display: flex;
+                width: 40%;
+                background-repeat: no-repeat;
+                background-position: 5vw 8vh;
+                background-size: contain;
+                filter: drop-shadow(13px -7px 1px rgb(82 237 155 / 52%));
+            }
+                .gradient{
+                    display: flex;
+                    background: linear-gradient(292deg, var(--softGreen) 0%, var(--azul) 45%, rgba(9,9,119, 0.3) 73%, rgba(0,212,255,0) 100%);
+                    width: 100vw;
+                    opacity: 13%;
+                    margin-left: -110vh;
+                    z-index: 1;
+                }
+            .rede{
+                background-image: url('../../assets/img/rede.png');
+                width: 100%;
+                height: 35%;
+                margin: 67.5vh 0vw 0vh -100vw;
+                background-size: 5vw;
+                filter: hue-rotate(328deg) saturate(153%) contrast(140%) drop-shadow(0px -11px 1px rgba(0 0 0/ 23%));
+                background-repeat: repeat-x;
+            }
+            .Lin3prop2{
+                width: 50%;
+            }
+                .Lin3prop2 .title{
+                    margin-top: 20vh;
+                    margin-bottom: -20vh;
+                }
+        .chaveamento{
+            display: flex;
+            width: 90%;
+            padding: 6vh 0vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            z-index: 3;
+        }
+            .chaveamento .headerChave{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                height: 12vh;
+                background-color: var(--azul);
+                width: 95.5%;
+                padding: 2vh 2vw 0vh 2vw;
+                border-radius: 0.5vw 0.5vw 0px 0px;
+            }
+                .logoChaveDiv{
+                    display: flex;
+                    width: 40%;
+                    height: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0vh 10vw 0vh 0vw;
+                }
+                    .logoChave{
+                        display: flex;
+                        height: 76%;
+                    }
+                    .logoChaveDiv .title{
+                        display: flex;
+                        font-family: 'Font Awesome 5 Free';
+                        font-size: 4vh;
+                        width: 81%;
+                        color: var(--shadow);
+                    }
+                .headerBtns{
+                    display: flex;
+                    width: 49%;
+                    height: 100%;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: end;
+                }  
+                    .btnHeaderChave{
+                        display: flex;
+                        width: 22%;
+                        height: 80%;
+                        background-color: var(--shadow);
+                        border-radius: 0.5vw 0.5vw 0px 0px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        #BtnTabs1{
+                            background-color: var(--branco);
+                        }
+                            #BtnTabs1 .iconChave{
+                                color: var(--softBlue)
+                            }
+                        .btnHeaderChave:hover{
+                            cursor: pointer;
+                        }
+                        .iconChave{
+                            display: flex;
+                            color: var(--azul);
+                            font-size: 4vh;
+                        }
+                            .iconChave:hover{
+                                cursor: pointer;
+                            }
+                        .linhaPdfIncon{
+                            display: flex;
+                            width: 89%;
+                            height: 44%;
+                            border-radius: 0.2vw;
+                            background-color: var(--azul);
+                            align-items: center;
+                            justify-content: center;
+                        }
+                            .linhaPdfIncon:hover{
+                                cursor: pointer;
+                            }
+                            .namePdf{
+                                color: var(--shadow);
+                                font-weight: bold;
+                                font-size: 4vh;
+                                font-family: monospace;
+                            }
+                                .namePdf:hover{
+                                    cursor: pointer;
+                                }
+            .chaveamento .tabs{
+                display: flex;
+                width: 95.5%;
+                justify-content: center;
+                align-items: center;
+                padding: 0vh 2vw 2vh 2vw;
+                background-color: var(--azul);
+                border-radius: 0vw 0vw 0.5vw 0.5vw;
+            } 
+                .chaveamento .tabs .tab{
+                    display: none;
+                    width: 97.5%;
+                    height: 71vh;
+                    background-color: var(--branco);
+                    border-radius: 0.5vw;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: start;
+                    padding: 1vw;
+                }
+                    #Tab1{
+                        display: flex;
+                    }
+                    .chaveamento .tabs .tab .ulDivChave{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        height: auto;
+                        position: absolute;
+                        width: 68vw;
+                    }
+                        .chaveamento .tabs .tab .ul{
+                            display: flex;
+                            width: 22vw;
+                            height: 2vh;
+                            background-color: var(--shadow);
+                            border-radius: 0vw 0vw 0.5vw 0.5vw;
+                            justify-content: center;
+                            font-family: monospace;
+                            font-weight: bold;
+                            font-size: 3vh;
+                            color: var(--branco);
+                        }
+                            .chaveamento .tabs .tab .ul:hover{
+                                box-shadow: 0px 0px 0px 0px var(--azul);
+                            }
+                        .chaveamento .tabs .tab .blockExtern{
+                            display: none;
+                            position: relative;
+                            padding: 0.5vw;
+                            border-radius: 0.5vw;
+                            margin: 1vh 0vw 0vh 18vw;
+                            width: auto;
+                            border: 3px solid var(--azul);
+                            z-index: 2;
+                        }
+                            .chaveamento .tabs .tab .blockExtern .ul{
+                                display: flex;
+                                height: 3vh;
+                                width: 92%;
+                                font-size: 1.7vh;
+                                margin-bottom: 3px;
+                            }
+                                .chaveamento .tabs .tab .blockExtern .ul:hover{
+                                    cursor: pointer;
+                                    box-shadow: 0px 18px 0px -15px var(--azul);
+                                }
+                    .blockChaveament{
+                        display: flex;
+                        height: 70vh;
+                        width: 96%;
+                        border: 1px solid;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        overflow: overlay;
+                    }
+                        .blockChaveament .rodada{
+                            display: flex;
+                            width: 33.5%;
+                            height: 70%;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                            .blockChaveament .rodada .boxA{
+                                display: flex;
+                                width: 100%;
+                                height: 100%;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                                .blockChaveament .rodada .boxA .minBox{
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                                    .minBox .retangue{
+                                        display: flex;
+                                        width: 45%;
+                                        height: 85%;
+                                        background-color: var(--azul);
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        padding: 0vh 2vw;
+                                        border-radius: 0.2vw;
+                                    }
+                                        .minBox .retangue .brasao{
+                                            display: flex;
+                                            width: 38%;
+                                            background-color: var(--shadow);
+                                            border-radius: 0.2vw;
+                                        }
+                                        .minBox .retangue .nameTime{
+                                            display: flex;
+                                            color: var(--shadow);
+                                            font-family: monospace;
+                                            font-weight: bold;
+                                            font-size: 3vh;
+                                        }
+                                    .minBox .lineV{
+                                        display: flex;
+                                        background-color: black;
+                                        height: 0.1vh;
+                                        width: 3vw;
+                                    }
+                                .blockChaveament .rodada .boxA .lineH{
+                                    display: flex;
+                                    background-color: black;
+                                    height: 0.1vh;
+                                    width: 20.5%;
+                                    transform: rotate(90deg);
+                                    margin-left: 19vw;
+                                }
+                            .blockChaveament .rodada .lineVFin{
+                                display: flex;
+                                background-color: black;
+                                height: 0.1vh;
+                                width: 40%;
+                                margin: 40% 0vw -40% 29.7vw;
+                            }
+                            .blockChaveament .rodada .lineV2{
+                                display: flex;
+                                background-color: black;
+                                height: 0.1vh;
+                                width: 40%;
+                                margin: 20% 0vw -20% 29.7vw;
+                            }
+                            .blockChaveament .rodada .lineHFin{
+                                display: flex;
+                                background-color: black;
+                                height: 0.1vh;
+                                width: 40%;
+                                transform: rotate(90deg);
+                                margin: -24vh 0vw 25vh 19vw;
+                            }
+    .pe{
+        display: flex;
+        height: 17vh;
+        width: 100vw;
+        background-color: rgb(50 50 50);
+        border-top: 4px solid var(--corE);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+        .etec{
+            display: flex;
+            width: 20%;
+            height: 13vh;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+            .etec:hover{
+                cursor: pointer;
+            }
+            .logoEtec{
+                width: 100%;
+                filter: drop-shadow(0px 0px 4px rgb(32 32 32)) saturate(125%);
+            }
+        .div{
+            display: flex;
+            width: 60%;
+            height: 11vh;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--azul);
+        }
+            .div label{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 1.9vh;
+            }
+            .div .icon{
+                color: var(--branco);
+            }
+        .div2{
+            display: flex;
+            width: 3%;
+            height: 6vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 3vh;
+            border: 3px solid var(--softBlue);
+            border-radius: 5vw;
+        }
+            .div2 .tel{
+                color: var(--softBlue);
+            }
+                .div2:hover{
+                    cursor: pointer;
+                }
+            .div2 .boxText{
+                display: none;
+                background-color: var(--branco);
+                border: 1px solid var(--shadow);
+                color: var(--shadow);
+                font-size: 2vh;
+                font-family: system-ui;
+                font-weight: bold;
+                padding: 1vh;
+                margin: -14vh 0vw 6vh -11vw;
+                z-index: 100;
+            }
+                .div2:hover .boxText{
+                    display: flex;
+                }
+            
+@keyframes nave{
+    0%{
+        rotate: 0deg;
+        margin-top: 74vh;
+    }
+    50%{
+        rotate: -10deg;
+        margin-top: 75vh;
+    }
+    100%{
+        rotate: 10deg;
+        margin-top: 76vh;
+    }
+}

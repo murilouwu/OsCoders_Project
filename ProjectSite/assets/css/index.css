@@ -6,7 +6,7 @@ body{
     .irTop{
         background-color: var(--invisible);
         display: flex;
-        background-image: url('../../assets/img/futsalball.png');
+        background-image: url('../../assets/img/Futsalball.png');
         width: 7vw;
         height: 11vh;
         position: fixed;
@@ -59,7 +59,7 @@ body{
                 }
                 .logo{
                     display: flex;
-                    width: 3vw;
+                    width: 2.3vw;
                     height: 92%;
                     border: 2px solid var(--branco);
                     border-radius: 10vw;
@@ -236,6 +236,7 @@ body{
                         }
                         .bolckTextAdd .palgrayAdd{
                             display: flex;
+                            align-items: center;
                         }
                 .addBlock2{
                     display: flex;
@@ -247,7 +248,7 @@ body{
                     }
             .imageAdd{
                 display: flex;
-                background-image: url('../../assets/img/voleiman.png'), url('../../assets/img/FutGirl.png');
+                background-image: url('../../assets/img/Voleiman.png'), url('../../assets/img/FutGirl.png');
                 width: 40%;
                 background-repeat: no-repeat;
                 background-position: -1vw 9vh, 21vw 25vh;

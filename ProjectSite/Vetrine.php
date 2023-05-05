@@ -95,7 +95,7 @@
                 ?>
                 <div class="ul" id="ul5" onclick="drop(this, '#blockExtern', 0, '#ul5', ['Mini Game <','Mini Game >'])">Mini Game ></div>
                 <div class="blockExtern" id="blockExtern">
-                    <div class="ul">Run</div>
+                    <div class="ul" onclick="red('//www.construct.net/en/free-online-games/run-51828/play')">Run</div>
                 </div>
             </div>
         </div>

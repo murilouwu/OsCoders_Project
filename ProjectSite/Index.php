@@ -39,7 +39,7 @@
                 ?>
                 <div class="ul" id="ul5" onclick="drop(this, '#blockExtern', 0, '#ul5', ['Mini Game <','Mini Game >'])">Mini Game ></div>
                 <div class="blockExtern" id="blockExtern">
-                    <div class="ul">Run</div>
+                    <div class="ul" onclick="red('//www.construct.net/en/free-online-games/run-51828/play')">Run</div>
                 </div>
             </div>
         </div>
@@ -152,7 +152,8 @@
             <div class="Biglogo"></div>
             <fieldset class="text">
                 <legend class="leng">Quem nós somos:</legend>
-                A "Sky Dev's" foi criada com o propósito de solucionar o problema proposto no Hackathon 2023. Somos uma equipe composta por 9 membros, das turmas do 1°, 2° e 3° DES em harmonia com o 3° JODI. Nossa equipe planeja aderir uma iniciativa para a inclusão de PCDs em jogos escolares, assim daremos início na iniciativa por meio de um “Forms”, com o intuito de colher dados de pessoas que desejariam participar. Nós promovemos a prática de atividades físicas, devido ao seu grande impacto positivo na saúde física, mental e social do aluno, estimulando o aperfeiçoamento de suas habilidades motoras, cognitivas e afetivas. A prática de esportes desenvolve no aluno pontos importantes, como a cooperação, disciplina e principalmente trabalho em equipe.
+                A "Sky Dev's" foi criada com o propósito de solucionar o problema proposto no Hackathon 2023. Somos uma equipe composta por 9 membros, das turmas do 1°, 2° e 3° DES em harmonia com o 3° JODI. Nossa equipe planeja aderir uma iniciativa para a inclusão de PCDs em jogos escolares, assim daremos início na iniciativa por meio de um “Forms”, com o intuito de colher dados de pessoas que desejariam participar. Nós promovemos a prática de atividades físicas, devido ao seu grande impacto positivo na saúde física, mental e social do aluno, estimulando o aperfeiçoamento de suas habilidades motoras, cognitivas e afetivas. A prática de esportes desenvolve no aluno pontos importantes, como a cooperação, disciplina e principalmente trabalho em equipe.<br>
+                <b style="font-size: 3vh;">O céu é o limite!</b>
             </fieldset>
         </div>
     </main>

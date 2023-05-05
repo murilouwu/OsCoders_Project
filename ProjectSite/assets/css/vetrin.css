@@ -4,7 +4,6 @@ body{
     background-color: var(--branco);
 }
     .irTop{
-        background-color: var(--invisible);
         display: flex;
         background-image: url('../../assets/img/Futsalball.png');
         width: 7vw;
@@ -17,6 +16,7 @@ body{
         z-index: 100;
         border: none;
         animation: 1.5s nave linear infinite alternate-reverse backwards;
+        background-color: var(--invisible);
     }
         .irTop:hover{
             cursor: pointer;
@@ -283,6 +283,8 @@ body{
                     .logoChave{
                         display: flex;
                         height: 76%;
+                        border: 1px solid var(--branco);
+                        border-radius: 3vw;
                     }
                     .logoChaveDiv .title{
                         display: flex;
@@ -308,10 +310,10 @@ body{
                         justify-content: center;
                         align-items: center;
                     }
-                        #BtnTabs1{
+                        #BtnTabs0{
                             background-color: var(--branco);
                         }
-                            #BtnTabs1 .iconChave{
+                            #BtnTabs0 .iconChave{
                                 color: var(--softBlue)
                             }
                         .btnHeaderChave:hover{
@@ -366,7 +368,7 @@ body{
                     justify-content: start;
                     padding: 1vw;
                 }
-                    #Tab1{
+                    #Tab0{
                         display: flex;
                     }
                     .chaveamento .tabs .tab .ulDivChave{
@@ -426,88 +428,232 @@ body{
                     }
                         .blockChaveament .rodada{
                             display: flex;
-                            width: 33.5%;
-                            height: 70%;
+                            width: 27vw;
+                            height: auto;
                             flex-direction: column;
-                            justify-content: space-between;
+                            justify-content: space-around;
                             align-items: center;
                         }
-                            .blockChaveament .rodada .boxA{
+                            .blockChaveament .rodada .chaveBox{
                                 display: flex;
+                                flex-direction: row;
                                 width: 100%;
-                                height: 100%;
+                                height: 24vh;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 3vh;
+                            }
+                                .blockChaveament .rodada .chaveBox .linhaChave{
+                                    transform: rotate(270deg);
+                                    width: 27%;
+                                }
+                                .blockChaveament .rodada .chaveBox .boxA{
+                                    display: flex;
+                                    width: 73%;
+                                    height: 28vh;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                }
+                                    .blockChaveament .rodada .chaveBox .boxA .minBox{
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: end;
+                                        align-items: center;
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+                                        .minBox .retangue{
+                                            display: flex;
+                                            width: 74%;
+                                            height: 10vh;
+                                            background-color: var(--azul);
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            padding: 0vh 1vw;
+                                            border-radius: 0.5vw;
+                                        }
+                                            .minBox .retangue .brasao{
+                                                display: flex;
+                                                height: 100%;
+                                                background-color: var(--shadow);
+                                                border-radius: 0.2vw;
+                                            }
+                                            .minBox .retangue .nameTime{
+                                                display: flex;
+                                                color: var(--shadow);
+                                                font-family: monospace;
+                                                font-weight: bold;
+                                                font-size: 4vh;
+                                            }
+                            .blockChaveament .rodada .boxB{
+                                display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
+                                height: 10vh;
+                                width: auto;
+                                margin-bottom: -3vh;
                             }
-                                .blockChaveament .rodada .boxA .minBox{
+                                .boxB .retangue{
                                     display: flex;
+                                    width: 21vw;
+                                    height: 10vh;
+                                    background-color: var(--azul);
                                     flex-direction: row;
-                                    justify-content: center;
+                                    justify-content: space-between;
                                     align-items: center;
-                                    height: 100%;
-                                    width: 100%;
+                                    padding: 0vh 1vw;
+                                    border-radius: 0.5vw;
                                 }
-                                    .minBox .retangue{
+                                    .boxB .retangue .brasao{
                                         display: flex;
-                                        width: 45%;
-                                        height: 85%;
-                                        background-color: var(--azul);
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                        align-items: center;
-                                        padding: 0vh 2vw;
+                                        height: 100%;
+                                        background-color: var(--shadow);
                                         border-radius: 0.2vw;
                                     }
-                                        .minBox .retangue .brasao{
-                                            display: flex;
-                                            width: 38%;
-                                            background-color: var(--shadow);
-                                            border-radius: 0.2vw;
-                                        }
-                                        .minBox .retangue .nameTime{
-                                            display: flex;
-                                            color: var(--shadow);
-                                            font-family: monospace;
-                                            font-weight: bold;
-                                            font-size: 3vh;
-                                        }
-                                    .minBox .lineV{
+                                    .boxB .retangue .nameTime{
                                         display: flex;
-                                        background-color: black;
-                                        height: 0.1vh;
-                                        width: 3vw;
+                                        color: var(--shadow);
+                                        font-family: monospace;
+                                        font-weight: bold;
+                                        font-size: 4vh;
                                     }
-                                .blockChaveament .rodada .boxA .lineH{
-                                    display: flex;
-                                    background-color: black;
-                                    height: 0.1vh;
-                                    width: 20.5%;
-                                    transform: rotate(90deg);
-                                    margin-left: 19vw;
+                                .boxB .trofeu{
+                                    font-size: 7vh;
+                                    color: var(--shadow);
                                 }
-                            .blockChaveament .rodada .lineVFin{
+                        .blockChaveament .row{
+                            display: flex;
+                            flex-direction: row;
+                            height: 75%;
+                            padding: 2vh 0vw;
+                            align-items: center;
+                            justify-content: space-around;
+                            width: 90%;
+                            margin-left: 5%;
+                            overflow: overlay;
+                        }
+                            .blockChaveament .row .space .card{
                                 display: flex;
-                                background-color: black;
-                                height: 0.1vh;
-                                width: 40%;
-                                margin: 40% 0vw -40% 29.7vw;
+                                background-color: var(--azul);
+                                width: 14vw;
+                                height: 39vh;
+                                border-radius: 0.5vw;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-left: 2vw;
                             }
-                            .blockChaveament .rodada .lineV2{
+                                .blockChaveament .row .space{
+                                    width: auto;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-flow: wrap;
+                                    justify-content: center;
+                                }
+                                    .blockChaveament .row .space .card .HeaderCard{
+                                        display: flex;
+                                        width: auto;
+                                        font-family: 'Font Awesome 5 Free';
+                                        font-size: 3vh;
+                                        color: var(--softBlue);
+                                        background-color: var(--shadow);
+                                        padding: 4%;
+                                        border-radius: 10%;
+                                        margin: 27vh 10vw -33vh 0vw;
+                                        z-index: 1;
+                                        border: 2px solid var(--azul);
+                                    }
+                                    .blockChaveament .row .space .card .ImgCard{
+                                        display: flex;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-size: cover;
+                                        background-position: top;
+                                        background-repeat: no-repeat;
+                                    }
+                                    .blockChaveament .row .space .card .nameCard{
+                                        color: var(--shadow);
+                                        font-family: monospace;
+                                        font-weight: bold;
+                                        font-size: 3vh;
+                                        width: 100%;
+                                        text-align: center;
+                                        padding: 1vh 0vw;
+                                        background-color: var(--branco);
+                                        border-radius: 0vw 0vw 0.4vw 0.4vw;
+                                    }
+                    .Calender{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        height: 100%;
+                        width: 94%;
+                        border: 3px solid;
+                    }
+                        .Calender .VsBrasoes{
+                            display: flex;
+                            width: 79%;
+                            height: 65%;
+                            justify-content: space-around;
+                            align-items: center;
+                            flex-direction: row;
+                        }
+                            .Calender .VsBrasoes .brasao{
                                 display: flex;
-                                background-color: black;
-                                height: 0.1vh;
-                                width: 40%;
-                                margin: 20% 0vw -20% 29.7vw;
+                                height: 35vh;
+                                width: 44%;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
                             }
-                            .blockChaveament .rodada .lineHFin{
-                                display: flex;
-                                background-color: black;
-                                height: 0.1vh;
-                                width: 40%;
-                                transform: rotate(90deg);
-                                margin: -24vh 0vw 25vh 19vw;
+                                .Calender .VsBrasoes .brasao img{
+                                    display: flex;
+                                    height: 90%;
+                                }
+                                .Calender .VsBrasoes .brasao h4{
+                                    text-align: center;
+                                    width: 100%;
+                                    color: var(--shadow);
+                                    font-family: monospace;
+                                    font-size: 90%;
+                                    font-weight: bold;
+                                }
+                            .Calender .VsBrasoes .versus{
+                                background-image: url('../../assets/img/versus.png');
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                width: 14vh;
+                                height: 14vh;
+                                transform: rotate(16deg);
+                                filter: hue-rotate(154deg);
                             }
+                        .Calender .TextBox{
+                            display: flex;
+                            background-color: var(--azul);
+                            width: 65%;
+                            height: 20%;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            flex-direction: column;
+                            color: var(--branco);
+                            font-weight: bold;
+                            font-family: monospace;
+                            font-size: 2.5vh;
+                            border-radius: 0.5vw;
+                        }
+    .PdfVisualizer{
+        height: 90%;
+        margin-top: 3%;
+        width: 95%;
+        box-shadow: 0px 0px 0.7vw 0.35vw var(--softBlue);
+        border-radius: 9px;
+    }
     .pe{
         display: flex;
         height: 17vh;

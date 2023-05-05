@@ -47,37 +47,66 @@ function drop(btn, id, fun, textId, texts){
 	btn.setAttribute("onclick", onclick);
 }
 
-function frmTabOp(mtr, css, retCss){
-	mostrar(mtr[0], mtr[1]);
-	let divsCss = [
-		css[0],
-		document.querySelector(css[1])
+function frmTabOp(names, id, line, title){
+	let divs = [
+		[],
+		[],
+		[],
+		[]
 	];
-	divsCss[0].style.backgroundColor = 'var(--branco)';
-	divsCss[1].style.color = 'var(--softBlue)';
-	if(css[2] != '0'){
-		divsCss[2] = document.querySelector(css[2]);
-		divsCss[2].style.backgroundColor = 'var(--branco)';
+	for(let i = 0; i<names.length; i++){
+		for(let i2 = 0; i2<4; i2++){
+			let idI = names[i]+""+i2;
+			divs[i][i2] = document.querySelector(idI);
+		};
 	};
-	let divsRetCss = [
-		document.querySelector(retCss[0]),//-btns
-		document.querySelector(retCss[1]),//-btns
-		document.querySelector(retCss[2]),//-btns
-		document.querySelector(retCss[3]),//-icons
-		document.querySelector(retCss[4]),//-icons
-		document.querySelector(retCss[5])//-icons
-	];
-	divsRetCss[0].style.backgroundColor = 'var(--shadow)';
-	divsRetCss[1].style.backgroundColor = 'var(--shadow)';
-	divsRetCss[2].style.backgroundColor = 'var(--shadow)';
-	divsRetCss[3].style.color = 'var(--azul)';
-	divsRetCss[4].style.color = 'var(--azul)';
-	divsRetCss[5].style.color = 'var(--shadow)';
 
-	if(retCss[6] != 'nulo'){
-		divsRetCss[6] = document.querySelector(retCss[6]);
-		divsRetCss[6].style.backgroundColor = 'var(--azul)';
+	for(let i = 0; i<divs[0].length; i++){
+		if(i != id){
+			divs[0][i].style.display = 'none';
+		}else if(divs[0][i].style.display == 'none'){
+			divs[0][i].style.display = 'flex';
+		}
 	};
+
+	for(let i = 0; i<divs[1].length; i++){//icon
+		if(i == (divs[1].length-1)){
+			if(i == id && divs[1][i].style.color != 'var(--branco)'){
+				divs[1][i].style.color = 'var(--branco)';
+			}else if(divs[1][i].style.color != 'var(--shadow)'){
+				divs[1][i].style.color = 'var(--shadow)';
+			}
+		}else if(i != id && divs[1][i].style.color != 'var(--azul)'){
+			divs[1][i].style.color = 'var(--azul)';
+		}else if(i == id && divs[1][i].style.color != 'var(--softBlue)'){
+			divs[1][i].style.color = 'var(--softBlue)';
+		}
+	};
+
+	for(let i = 0; i<divs[2].length; i++){//btn
+		if(i == (divs[2].length-1)){
+			if(i == id && divs[2][i].style.backgroundColor != 'var(--branco)'){
+				divs[2][i].style.backgroundColor = 'var(--branco)';
+			}else if(divs[2][i].style.backgroundColor != 'var(--shadow)'){
+				divs[2][i].style.backgroundColor = 'var(--shadow)';
+			}
+		}else if(i != id && divs[2][i].style.backgroundColor != 'var(--shadow)'){
+			divs[2][i].style.backgroundColor = 'var(--shadow)';
+		}else if(i == id && divs[2][i].style.backgroundColor != 'var(--branco)'){
+			divs[2][i].style.backgroundColor = 'var(--branco)';
+		}
+	};
+
+	if(id == (divs[0].length-1)){
+		document.querySelector(line).style.backgroundColor = 'var(--softBlue)';
+	}
+	else{
+		document.querySelector(line).style.backgroundColor = 'var(--azul)';
+	};
+	let text = document.querySelector(title[0]);
+	if(text.innerHTML != title[1]){
+		text.innerHTML = title[1];
+	}
 }
 
 function addBoll(bt, idBase){
@@ -99,7 +128,6 @@ function addBoll(bt, idBase){
 			lp == false;
 			break;
 		}
-		
 	};
 	bt.innerHTML += ' ●';
 }

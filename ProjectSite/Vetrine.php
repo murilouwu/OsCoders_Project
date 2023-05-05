@@ -7,7 +7,7 @@
     $_SESSION['urlPdf'] = array(
         'assets/pdfs/Fut.pdf',
         'assets/pdfs/Volei.pdf',
-        'assets/pdfs/Basquete',
+        'assets/pdfs/Basquete.pdf',
         'Tênis de Mesa',
         'Atletismo',
         'assets/pdfs/Hendbol.pdf'
@@ -95,7 +95,7 @@
                 ?>
                 <div class="ul" id="ul5" onclick="drop(this, '#blockExtern', 0, '#ul5', ['Mini Game <','Mini Game >'])">Mini Game ></div>
                 <div class="blockExtern" id="blockExtern">
-                    <div class="ul">Mini Game 1</div>
+                    <div class="ul">Run</div>
                 </div>
             </div>
         </div>
@@ -130,20 +130,29 @@
                     <h3 class="title" id="tabTitle">C H A V E A M E N T O</h3>
                 </div>
                 <div class="headerBtns">
-                    <div class="btnHeaderChave" id="BtnTabs1" onclick="frmTabOp([['#Tab4','#Tab2','#Tab3','#Tab1'], 3], [this, '#iconA', '0'], ['#BtnTabs4','#BtnTabs2','#BtnTabs3','#iconB','#iconC','#iconD','#Line'])"><i class="iconChave fa-solid fa-trophy" id="iconA"></i></div>
-                    <div class="btnHeaderChave" id="BtnTabs2" onclick="frmTabOp([['#Tab1','#Tab4','#Tab3','#Tab2'], 3], [this, '#iconB', '0'], ['#BtnTabs1','#BtnTabs4','#BtnTabs3','#iconA','#iconC','#iconD','#Line'])"><i class="iconChave fa-solid fa-hand" id="iconB"></i></div>
-                    <div class="btnHeaderChave" id="BtnTabs3" onclick="frmTabOp([['#Tab1','#Tab2','#Tab4','#Tab3'], 3], [this, '#iconC', '0'], ['#BtnTabs1','#BtnTabs2','#BtnTabs4','#iconA','#iconB','#iconD','#Line'])"><i class="iconChave fa-solid fa-calendar-days" id="iconC"></i></div>
-                    <div class="btnHeaderChave" id="BtnTabs4" onclick="frmTabOp([['#Tab1','#Tab2','#Tab3','#Tab4'], 3], [this, '#iconD', '#Line']), ['#BtnTabs1','#BtnTabs2','#BtnTabs3','#iconA','#iconB','#iconC', 'nulo']">
+                    <div class="btnHeaderChave" id="BtnTabs0" onclick="frmTabOp(['#Tab','#icon','#BtnTabs'], 0,'#Line', ['#tabTitle','C H A V E A M E N T O'])">
+                        <i class="iconChave fa-solid fa-trophy" id="icon0"></i>
+                    </div>
+
+                    <div class="btnHeaderChave" id="BtnTabs1" onclick="frmTabOp(['#Tab','#icon','#BtnTabs'], 1,'#Line', ['#tabTitle','T I M E'])">
+                        <i class="iconChave fa-solid fa-hand" id="icon1"></i>
+                    </div>
+                    
+                    <div class="btnHeaderChave" id="BtnTabs2" onclick="frmTabOp(['#Tab','#icon','#BtnTabs'], 2,'#Line', ['#tabTitle','C A L E N D A R I O'])">
+                        <i class="iconChave fa-solid fa-calendar-days" id="icon2"></i>
+                    </div>
+
+                    <div class="btnHeaderChave" id="BtnTabs3" onclick="frmTabOp(['#Tab','#icon','#BtnTabs'], 3,'#Line', ['#tabTitle','P D F'])">
                         <div class="linhaPdfIncon" id="Line">
-                            <label class="namePdf" id="iconD">PDF</label>
+                            <label class="namePdf" id="icon3">PDF</label>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="tabs">
-                <div class="tab" id="Tab1">
+                <div class="tab" id="Tab0">
                     <div class="ulDivChave">
-                        <div class="ul" id="ul" onclick="drop(this, '#blockExternII', 0, '#ul', ['Chaves v','Chaves ᴧ'])">Chaves v</div>
+                        <div class="ul" id="ul" onclick="drop(this, '#blockExternII', 0, '#ul', ['Chaves v','Chaves ᴧ'])">Chaves ᴧ</div>
                         <div class="blockExtern" id="blockExternII">
                             <?php
                                 if(isset($_SESSION['Events'][$_SESSION['esp']])){
@@ -156,75 +165,75 @@
                     </div>
                     <div class="blockChaveament">
                         <div class="rodada">
-                            <div class="lineV2"></div>
-                            <div class="boxA">
-                                <div class="minBox">
-                                    <div class="retangue">
-                                        <img src="assets/img/brasao.png" class="brasao">
-                                        <h4 class="nameTime">Time A</h4>
+                            <div class="chaveBox">
+                                <div class="boxA">
+                                    <div class="minBox">
+                                        <div class="retangue">
+                                            <img src="assets/img/brasao.png" class="brasao">
+                                            <h4 class="nameTime">Time A</h4>
+                                        </div>
+                                        
                                     </div>
-                                    <div class="lineV"></div>
-                                </div>
-                                <div class="lineH"></div>
-                                <div class="minBox">
-                                    <div class="retangue">
-                                        <img src="assets/img/brasao.png" class="brasao">
-                                        <h4 class="nameTime">Time B</h4>
+                                    <div class="minBox">
+                                        <div class="retangue">
+                                            <img src="assets/img/brasao.png" class="brasao">
+                                            <h4 class="nameTime">Time B</h4>
+                                        </div>
                                     </div>
-                                    <div class="lineV"></div>
                                 </div>
+                                <img src="assets/img/Linha.png" class="linhaChave">
                             </div>
-                            <div class="lineV2"></div>
-                            <div class="boxA">
-                                <div class="minBox">
-                                    <div class="retangue">
-                                        <img src="assets/img/brasao.png" class="brasao">
-                                        <h4 class="nameTime">Time C</h4>
+                            <div class="chaveBox">
+                                <div class="boxA">
+                                    <div class="minBox">
+                                        <div class="retangue">
+                                            <img src="assets/img/brasao.png" class="brasao">
+                                            <h4 class="nameTime">Time C</h4>
+                                        </div>
                                     </div>
-                                    <div class="lineV"></div>
-                                </div>
-                                <div class="lineH"></div>
-                                <div class="minBox">
-                                    <div class="retangue">
-                                        <img src="assets/img/brasao.png" class="brasao">
-                                        <h4 class="nameTime">Time D</h4>
+                                    <div class="minBox">
+                                        <div class="retangue">
+                                            <img src="assets/img/brasao.png" class="brasao">
+                                            <h4 class="nameTime">Time D</h4>
+                                        </div>
                                     </div>
-                                    <div class="lineV"></div>
                                 </div>
+                                <img src="assets/img/Linha.png" class="linhaChave">
                             </div>
                         </div>
                         <div class="rodada">
-                            <div class="lineVFin"></div>
-                            <div class="boxA">
-                                <div class="minBox">
-                                    <div class="retangue">
-                                        <img src="assets/img/brasao.png" class="brasao">
-                                        <h4 class="nameTime">Time A</h4>
+                            <div class="chaveBox">
+                                <div class="boxA">
+                                    <div class="minBox">
+                                        <div class="retangue">
+                                            <img src="assets/img/brasao.png" class="brasao">
+                                            <h4 class="nameTime">Time A</h4>
+                                        </div>
                                     </div>
-                                    <div class="lineV"></div>
-                                </div>
-                            </div>
-                            <div class="boxA">
-                                <div class="minBox">
-                                    <div class="retangue">
-                                        <img src="assets/img/brasao.png" class="brasao">
-                                        <h4 class="nameTime">Time C</h4>
+                                    <div class="minBox">
+                                        <div class="retangue">
+                                            <img src="assets/img/brasao.png" class="brasao">
+                                            <h4 class="nameTime">Time C</h4>
+                                        </div>
                                     </div>
-                                    <div class="lineV"></div>
                                 </div>
+                                <img src="assets/img/Linha.png" class="linhaChave">
                             </div>
-                            <div class="lineHFin"></div>
                         </div>
-                        <div class="rodada">
-                            <div class="boxC">
-                                
+                        <div class="rodada" style="align-items: flex-start;">
+                            <div class="boxB">
+                                <div class="retangue">
+                                    <img src="assets/img/brasao.png" class="brasao">
+                                    <h4 class="nameTime">Time A</h4>
+                                </div>
+                                <i class="trofeu fa-solid fa-medal"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab" id="Tab2">
+                <div class="tab" id="Tab1">
                     <div class="ulDivChave">
-                        <div class="ul" id="ul" onclick="drop(this, '#blockExternIII', 0, '#ul', ['Times v','Times ᴧ'])">Times v</div>
+                        <div class="ul" id="ul1" onclick="drop(this, '#blockExternIII', 0, '#ul1', ['Times v','Times ᴧ'])">Times ᴧ</div>
                         <div class="blockExtern" id="blockExternIII">
                             <?php
                                 if(isset($_SESSION['Times'][$_SESSION['esp']])){
@@ -236,14 +245,54 @@
                         </div>
                     </div>
                     <div class="blockChaveament">
-
+                        <div class="row">
+                            <div class="space">
+                                <div class="card">
+                                    <div style="background-image: url('assets/img/mbappe.png')" class="ImgCard"></div>
+                                    <div class="nameCard">Nome</div>
+                                </div>
+                                <div class="card">
+                                    <div style="background-image: url('assets/img/mbappe.png')" class="ImgCard"></div>
+                                    <div class="nameCard">Nome</div>
+                                </div>
+                                <div class="card">
+                                    <div class="HeaderCard">C</div>
+                                    <div style="background-image: url('assets/img/mbappe.png')" class="ImgCard"></div>
+                                    <div class="nameCard">Nome</div>
+                                </div>
+                                <div class="card">
+                                    <div style="background-image: url('assets/img/mbappe.png')" class="ImgCard"></div>
+                                    <div class="nameCard">Nome</div>
+                                </div>
+                                <div class="card">
+                                    <div style="background-image: url('assets/img/mbappe.png')" class="ImgCard"></div>
+                                    <div class="nameCard">Nome</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="Tab2">
+                    <div class="Calender">
+                        <div class="VsBrasoes">
+                            <div class="brasao">
+                                <img src="assets/img/Brasao.png">
+                                <h4>Time de <?php echo $_SESSION['esport'][$_SESSION['esp']]?> 3 JOD</h4>
+                            </div>
+                            <div class="versus"></div>
+                            <div class="brasao">
+                                <img src="assets/img/Brasao.png">
+                                <h4>Time de <?php echo $_SESSION['esport'][$_SESSION['esp']]?> 3 DES</h4>
+                            </div>
+                        </div>
+                        <div class="TextBox">
+                            Próxima Competição do interclasse da ETEC dia 13/04/2023<br>
+                            Não Perca
+                        </div>
                     </div>
                 </div>
                 <div class="tab" id="Tab3">
-                    <!--calendario-->
-                </div>
-                <div class="tab" id="Tab4">
-                    <embed src="<?php echo $_SESSION['urlPdf'][$_SESSION['esp']]?>" type="application/pdf">
+                    <embed src="<?php echo $_SESSION['urlPdf'][$_SESSION['esp']]?>" type="application/pdf" class="PdfVisualizer">
                 </div>
             </div>
         </div>

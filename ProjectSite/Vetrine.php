@@ -8,41 +8,41 @@
         'assets/pdfs/Fut.pdf',
         'assets/pdfs/Volei.pdf',
         'assets/pdfs/Basquete.pdf',
-        'Tênis de Mesa',
-        'Atletismo',
+        'assets/pdfs/PingPong.pdf',
+        'assets/pdfs/Atletismo.pdf',
         'assets/pdfs/Hendbol.pdf'
     );
     $on = "addBoll(this, '#ulEnvent')";
     $_SESSION['Events'] = array(
         /*Futsal events*/array(
-            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 04 do ano de 2023 ●</div>',
-            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' mês 07 do ano de 2022</div>',
-            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 10 do ano de 2021</div>'
+            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 04 do ano de 2023 ●</div>',
+            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 07 do ano de 2022</div>',
+            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 10 do ano de 2021</div>'
         ),
         /*Volei events*/array(
-            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' mês 02 do ano de 2023 ●</div>',
-            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 06 do ano de 2022 </div>',
-            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 09 do ano de 2021</div>'
+            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 02 do ano de 2023 ●</div>',
+            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 06 do ano de 2022 </div>',
+            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 09 do ano de 2021</div>'
         ),
         /*Basquete events*/array(
-            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 07 do ano de 2023 ●</div>',
-            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 03 do ano de 2022</div>',
-            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' mês 09 do ano de 2021</div>'
+            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 07 do ano de 2023 ●</div>',
+            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 03 do ano de 2022</div>',
+            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 09 do ano de 2021</div>'
         ),
         /*Tênis events*/array(
-            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' mês 04 do ano de 2023 ●</div>',
-            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 03 do ano de 2022</div>',
-            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' mês 02 do ano de 2021</div>'
+            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 04 do ano de 2023 ●</div>',
+            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 03 do ano de 2022</div>',
+            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 02 do ano de 2021</div>'
         ),
         /*Atletismo events*/array(
-            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 06 do ano de 2023 ●</div>',
-            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 06 do ano de 2022</div>',
-            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' mês 08 do ano de 2021</div>'
+            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 06 do ano de 2023 ●</div>',
+            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 06 do ano de 2022</div>',
+            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 08 do ano de 2021</div>'
         ),
         /*Hendbol events*/array(
-            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' mês 10 do ano de 2023 ●</div>',
-            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 11 do ano de 2022</div>',
-            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' mês 6 do ano de 2021</div>'
+            '<div class="ul" id="ulEnvent0" onclick="'.$on.'"> JEESP de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 10 do ano de 2023 ●</div>',
+            '<div class="ul" id="ulEnvent1" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 11 do ano de 2022</div>',
+            '<div class="ul" id="ulEnvent2" onclick="'.$on.'"> Interclasse de '.$_SESSION['esport'][$_SESSION['esp']].' no mês 6 do ano de 2021</div>'
         )
     );
     $on = "addBoll(this, '#ulTime')";

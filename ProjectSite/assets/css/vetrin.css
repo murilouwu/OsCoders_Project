@@ -619,7 +619,7 @@ body{
                                     width: 100%;
                                     color: var(--shadow);
                                     font-family: monospace;
-                                    font-size: 90%;
+                                    font-size: 2vh;
                                     font-weight: bold;
                                 }
                             .Calender .VsBrasoes .versus{

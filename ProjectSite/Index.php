@@ -4,7 +4,7 @@
     $_SESSION['esport'] = 
     array(
         'Futsal', //0
-        'Volei', //1
+        'Vôlei', //1
         'Basquete', //2
         'Tênis de Mesa', //3
         'Atletismo', //4
@@ -91,7 +91,7 @@
                         <img src="assets/img/run.png" class="jogador" id="jogador1">
                     </div>
                     <div class="dateDoJogo">
-                        Próximo jogo 12/05/2023 a 31/06/2023
+                        Próximo jogo 12/05/2023
                     </div>
                 </div>
                 <div class="TipeCompeticion" style="border: none; transform: scaleX(-1);">
@@ -105,7 +105,7 @@
                         <img src="assets/img/voleimanII.png" class="jogador" style="transform: scaleX(-1); animation: 10s nave2 linear infinite alternate-reverse backwards;">
                     </div>
                     <div class="dateDoJogo" style="transform: scaleX(-1);">
-                        Próximo jogo 02/04/2023 a 23/08/2023
+                        Próximo jogo 02/04/2023
                     </div>
                 </div>
             </div>
@@ -118,14 +118,14 @@
                     <img src="assets/img/<?php echo $_SESSION['esport'][$_SESSION['balls'][0]]?>ball.png" class="item">
                     <fieldset class="bolckTextAdd">
                         <legend class="legenda">Nossa Meta</legend>
-                        <p class="palgrayAdd">O site, foi realizado com o intuito de informar sobre o funcionamento dos Eventos de esporte na ETEC de Peruíbe.</p>
+                        <p class="palgrayAdd">O site foi realizado com o intuito de informar sobre o funcionamento dos eventos esportivos na ETEC de Peruíbe.</p>
                     </fieldset>
                 </div>
                 <div class="textAdd addBlock2">
                     <img src="assets/img/<?php echo $_SESSION['esport'][$_SESSION['balls'][1]]?>ball.png" class="item">
                     <fieldset class="bolckTextAdd">
                         <legend class="legenda">Run</legend>
-                        <p class="palgrayAdd">o jogo criado pela Sky Devs, com objetivo de divulgar nosso projeto, Um atleta que salta sobre barreiras, retratando uma modalidade do atletismo.</p>
+                        <p class="palgrayAdd">O jogo criado pela Sky Devs, com objetivo de divulgar nosso projeto, um atleta que salta sobre barreiras, retratando uma modalidade do atletismo.</p>
                     </fieldset>
                 </div>
             </div>
@@ -133,15 +133,15 @@
                 <div class="textAdd">
                     <img src="assets/img/<?php echo $_SESSION['esport'][$_SESSION['balls'][0]]?>ball.png" class="item">
                     <fieldset class="bolckTextAdd">
-                        <legend class="legenda">Infromações</legend>
-                        <p class="palgrayAdd">Contamos com a descrição de nossos times representantes, em conjunto de um PDF detalhando as regras e normas de cada modalidade </p>
+                        <legend class="legenda">Informações</legend>
+                        <p class="palgrayAdd">Contamos com a descrição de nossos times representantes, em conjunto de um PDF detalhando as regras e normas de cada modalidade.</p>
                     </fieldset>
                 </div>
                 <div class="textAdd addBlock2">
                     <img src="assets/img/<?php echo $_SESSION['esport'][$_SESSION['balls'][1]]?>ball.png" class="item">
                     <fieldset class="bolckTextAdd">
                         <legend class="legenda">Os Eventos de Esporte</legend>
-                        <p class="palgrayAdd"> Temos informações sobre o estado das chaves das competições.</p>
+                        <p class="palgrayAdd"> Temos informações sobre o estado do chaveamento das competições.</p>
                     </fieldset>
                 </div>
             </div>
